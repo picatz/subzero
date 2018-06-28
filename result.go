@@ -20,7 +20,7 @@ func (r *Result) IsSuccess() bool {
 	return true
 }
 
-// IsSuccess checks if the Result has any failure before
+// IsFailure checks if the Result has any failure before
 // determining if the result failed.
 func (r *Result) IsFailure() bool {
 	if r.Failure != nil {
