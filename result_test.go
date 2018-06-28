@@ -82,7 +82,7 @@ func ExampleResult() {
 	// Output: example : info.bing.com
 }
 
-func ExampleResultIsSuccess() {
+func ExampleResult_IsSuccess() {
 	result := Result{Success: "wiggle.github.com"}
 	if result.IsSuccess() {
 		fmt.Println(result.Success)
@@ -90,7 +90,7 @@ func ExampleResultIsSuccess() {
 	// Output: wiggle.github.com
 }
 
-func ExampleResultIsFailure() {
+func ExampleResult_IsFailure() {
 	result := Result{Failure: errors.New("failed to party")}
 	if result.IsFailure() {
 		fmt.Println(result.Failure.Error())
@@ -98,7 +98,7 @@ func ExampleResultIsFailure() {
 	// Output: failed to party
 }
 
-func ExampleResultHasType() {
+func ExampleResult_HasType() {
 	result := Result{Type: "example"}
 	fmt.Println(result.HasType())
 	// Output: true
