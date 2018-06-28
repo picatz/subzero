@@ -26,3 +26,9 @@ func ExampleEnumerationOptions() {
 	}
 	// Output: sources not found in options
 }
+
+func ExampleEnumerationOptionsHasSources() {
+	opts := EnumerationOptions{}
+	fmt.Println(opts.HasSources())
+	// Output: false
+}
